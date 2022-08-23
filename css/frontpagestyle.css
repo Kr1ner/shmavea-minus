@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 1fr 1fr 200px;
+    gap: 10px;
+    background-color: rgb(134, 85, 190);
+}
+
+.container #frontpage-nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 10px;
+    background-color:rgb(53, 45, 71);
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-family: 'Menlo';
+}
+
+#frontpage-nav h3{
+    line-height: 60px;
+    font-size: 30px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    color: rgb(157, 76, 232);
+}
+
+#frontpage-nav ul{
+    float: left;
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+#frontpage-nav ul li{
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    line-height: 60px;
+    margin-left: 2rem;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+#frontpage-nav ul li:hover{
+    color: rgb(148, 62, 228);
+    transition-duration: 0.05s;
+}
+
+#frontpage-nav ul li:hover::after{
+    color: white;
+    transition-duration: 0.05s;
+}
+
+#netflix-slider{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgb(69, 30, 111);
+    margin: 10px;
+    border-radius: 10px;
+}
