@@ -3,6 +3,11 @@
     margin:0;
 }
 
+html{
+    background-color:rgb(31, 27, 39);
+}
+
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -10,7 +15,7 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 80px 1fr 1fr 200px;
     gap: 10px;
-    background-color: rgb(134, 85, 190);
+    background-color: rgb(33, 23, 44);
 }
 
 .container #frontpage-nav{
@@ -66,7 +71,15 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-color: rgb(69, 30, 111);
+    background-color: rgb(38, 22, 57);
     margin: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.movie-box{
+    
 }
